@@ -1,0 +1,5 @@
+<launch>
+	<!-- <rosparam command="load"  file="$(find launch_pkg)/config/param.yaml" /> -->
+	<!-- <rosparam command="load"  file="$(find launch_pkg)/config/parameter_try.yaml" /> -->
+	<node pkg="launch_pkg" name="reconnectBase" type="reconnectBase.py" output="screen"> </node>
+</launch>

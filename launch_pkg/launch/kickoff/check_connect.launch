@@ -1,0 +1,3 @@
+<launch>
+	<node pkg="launch_pkg" type="check_board_connect.py" name="check_board_connect"> </node>
+</launch>

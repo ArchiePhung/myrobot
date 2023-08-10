@@ -1,0 +1,4 @@
+<launch>
+	<rosparam command="load"  file="$(find ros_canbus)/config/param_board.yaml" />
+	<node pkg="ros_canbus" type="convert_ROS_CAN.py" name="convert_CAN_node" output="screen"> </node>
+</launch>

@@ -1,0 +1,18 @@
+
+<launch>
+    <!-- <rosparam command="load"  file="$(find launch_pkg)/config/param_all.yaml" /> -->
+    <!-- <node pkg="launch_pkg" type="check_board_connect.py" name="check_board_connect"/> -->
+
+    <!-- HC Fake RTC  -->
+    <node pkg="rosserial_python" name="BOARD_node" type="serial_node.py">
+        <param name="port" value="/dev/ttyUSB0" />
+        <param name="baud" value="57600" /> 
+    </node>
+    
+    <node pkg="teleop_keyboard" type="teleop_twist_keyboard" name="teleop_twist_keyboard" output="screen" />
+    <!-- <node pkg="ros_canbus" type="convert_ROS_CAN.py" name="convert_CAN_node" /> -->
+
+    <!-- <node pkg="app_ros" type="app_backend.py" name="app_backend" /> -->
+    <!-- <node pkg="app_ros" type="app_settings.py" name="app_settings" output="screen" /> -->
+    <!-- <node pkg="app_ros" type="app_frontend.py" name="app_frontend" output="screen" /> -->
+</launch>

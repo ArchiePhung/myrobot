@@ -1,0 +1,29 @@
+#------ PORT PHYSICAL ------#
+port_rtc : ttyUSB0
+port_board: ttyUSB1
+
+#------ File launch Path ------#
+path_firstWork:     /home/archiep/circuit_test_ws/src/launch_pkg/launch/kickoff/firstWork.launch
+path_checkPort :    /home/archiep/circuit_test_ws/src/launch_pkg/launch/kickoff/check_connect.launch
+path_reconnectBase: /home/archiep/circuit_test_ws/src/launch_pkg/launch/kickoff/reconnectBase.launch
+path_rtcf1:         /home/archiep/circuit_test_ws/src/launch_pkg/launch/board/RTCF1.launch
+path_convert:       /home/archiep/circuit_test_ws/src/ros_canbus/launch/convertCAN_ROS.launch
+path_appbackend:    /home/archiep/circuit_test_ws/src/app_ros/launch/app_backend.launch
+path_appfrontend:   /home/archiep/circuit_test_ws/src/app_ros/launch/app_frontend.launch
+
+#------ Time check lost connect ------#
+timeLost_rtcf1: 5
+timeLost_mainf1: 5
+timeLost_main: 5
+timeLost_oc: 20
+timeLost_hc: 5
+timeLost_cpd: 5
+
+#------ Time wait after connect ------#
+timeWait_rtcf1: 20
+timeWait_mainf1: 20
+timeWait_main: 20
+timeWait_oc: 20
+timeWait_hc: 20
+timeWait_cpd: 20
+timeWait_hmi: 20

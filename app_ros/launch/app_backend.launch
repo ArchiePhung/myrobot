@@ -1,0 +1,4 @@
+<launch>
+	<rosparam command="load"  file="$(find app_ros)/config/param_app.yaml" />
+	<node pkg="app_ros" type="app_backend.py" name="app_backend" output="screen"> </node>
+</launch>

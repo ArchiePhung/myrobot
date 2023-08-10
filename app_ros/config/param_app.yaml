@@ -1,0 +1,12 @@
+#------ PATH UPLOAD CODE  ------#
+# path_rtc_origin: "/home/archiep/circuit_test_ws/src/BOARD/RTC_HC_fake"
+# path_rtc : "/home/archiep/circuit_test_ws/src/BOARD/RTC20"
+# path_main: "/home/archiep/circuit_test_ws/src/BOARD/MAIN8.2.3"
+# path_oc  : "/home/archiep/circuit_test_ws/src/BOARD/OC8.23"
+# path_hc  : "/home/archiep/circuit_test_ws/src/BOARD/HC823"
+# path_cpd : "/home/archiep/circuit_test_ws/src/BOARD/CPD_vr1"
+
+#------ OS COMMAND ------#
+cm_enable: "sudo chmod a+rw /dev/ttyUSB0"
+cm_enable1: "sudo chmod a+rw /dev/ttyUSB1"
+cm_upload: "platformio run --target upload"
