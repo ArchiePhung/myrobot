@@ -1,0 +1,4 @@
+<launch>
+	<rosparam command="load"  file="$(find launch_pkg)/config/parameter_scan.yaml" />
+	<node pkg="launch_pkg" type="scanMap_launch.py" name="scanMap_launch" output="screen"> </node>
+</launch>

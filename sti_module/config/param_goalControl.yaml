@@ -1,0 +1,19 @@
+
+#use for node   : goal_control_v2.py
+rate : 20 
+vel_x_max : 0.6
+vel_x_min : 0.1
+vel_theta_max : 0.5
+vel_theta_min : 0.1
+tolerance_xy_max : 0.2
+tolerance_xy_min : 0.02
+tolerance_theta_max : 0.2
+tolerance_theta_min : 0.02
+planner_frequency_max : 50
+planner_frequency_min : 0
+
+# use for : buoc == 1 , line 221
+tolerance_rot_step1 : 0.05 # rad , goc quay robot huong den Goal tiep theo
+vel_rot_step1 : 0.5 # m/s , toc do robot khi quay huong den Goal tiep theo 
+
+gioihan_lui : 3.0 

@@ -1,0 +1,18 @@
+<launch>
+      <!--  di vao bang tai bang TAG 
+            parking_v15      : khong su dung linetu
+            parking_lintu_v9 : su dung linetu + check ke 
+      -->
+
+      <!-- <arg name="node_namespace" default="parking_v15" />  -->
+      <arg name="node_namespace" default="parking_lintu_v11" />
+      
+      <rosparam command="load" 
+                file="$(find sti_module)/config/param_parking.yaml" 
+                ns="$(arg node_namespace)"   />
+      <node pkg="sti_module" 
+            name="$(arg node_namespace)" 
+            type="$(arg node_namespace).py" 
+            output="screen"/>
+
+</launch>

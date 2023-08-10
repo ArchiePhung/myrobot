@@ -1,0 +1,25 @@
+<launch>
+	<!-- Filter  -->
+	<!-- <include file="$(find base_pkg)/launch/filterTopic.launch" /> -->
+
+	<!-- kinematic -->
+	<param name="wheel_circumference" value="0.4787" /> <!-- (D = 6 inchs - 0.1524 m) -->
+	<param name="transmission_ratio" value="20.0" />
+	<param name="wheels_x_distance" value="0.72" /> <!-- 0.612 -->
+	<param name="wheels_y_distance" value="0.61" /> <!-- 0.612 -->
+	<param name="step_per_round" value="10000" />
+
+	<param name="frequency_control" value="12.0" />
+	<param name="linear_max" value="0.4" />
+	<param name="angular_max" value="0.34" />
+	<param name="max_rpm" value="3800" />
+
+	<param name="topicControl_vel" value="/cmd_vel" />
+	<param name="topicGet_vel" value="/raw_vel" />
+	<param name="topicControl_driver" value="/mecanum_request" />  <!-- "/" -->
+	<param name="topicRespond_driver" value="/mecanum_respond" />  <!-- "/" -->
+	
+	<param name="frame_id" value="frame_robot1" />
+
+	<node pkg="mecanum_pkg" type="kinematic_mecanum.py" name="kinematic_node" output="screen">	</node>
+</launch>

@@ -1,0 +1,22 @@
+<launch>
+      <!-- nhan Goal vaf dieu huong -->
+      <arg name="node_namespace" default="goal_control_v7" />
+      <rosparam command="load" 
+                file="$(find sti_module)/config/param_goalControl.yaml" 
+                ns="$(arg node_namespace)"   />
+      <node pkg="sti_module" 
+            name="$(arg node_namespace)" 
+            type="$(arg node_namespace).py" 
+            output="screen"/>
+
+      <node pkg="sti_module" 
+            name="quangduong" 
+            type="quangduong.py" 
+            output="screen"/>
+      
+      <node pkg="sti_module" 
+            name="cmdVelSwitch" 
+            type="cmdVelSwitch.py" 
+            output="screen"/>
+
+</launch>

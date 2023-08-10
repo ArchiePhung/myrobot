@@ -1,0 +1,30 @@
+#------ PORT PHYSICAL ------#
+port_board   : stibase_rtc # shiv34 
+port_motor   : stibase_motor
+port_imu     : stibase_imu
+port_camera  : /017322071534
+port_lms100  : 192.168.10.10
+port_tim551  : 192.168.100.100
+port_ipClient: 10.10.2.9
+card_wifi    : wlp3s0
+
+#------ File launch Path------#
+path_firstWork     : /home/amr1-l300/catkin_ws/src/launch_pkg/launch/kickoff/firstWork.launch # clean log.
+path_checkPort     : /home/amr1-l300/catkin_ws/src/launch_pkg/launch/kickoff/checkPhysical.launch
+#path_reconnectAll : /home/stivietnam/catkin_ws/src/launch_pkg/launch/reconnect.launch
+
+path_board         : /home/amr1-l300/catkin_ws/src/ros_canBus/launch/BOARD_RTC.launch
+path_convertCAN    : /home/amr1-l300/catkin_ws/src/ros_canBus/launch/convertCAN_ROS.launch
+
+path_motor         : /home/amr1-l300/catkin_ws/src/mecanum_pkg/launch/connectCAN.launch
+
+path_driver       : /home/amr1-l300/catkin_ws/src/mecanum_pkg/launch/controlDriver.launch
+path_kinematic    : /home/amr1-l300/catkin_ws/src/mecanum_pkg/launch/kinematic_mecanum.launch
+
+path_tfScan       : /home/amr1-l300/catkin_ws/src/launch_pkg/launch/tf/tf_scan.launch
+path_lidarFull    : /home/amr1-l300/catkin_ws/src/launch_pkg/launch/lidar/lidar_full.launch
+
+path_safetyZone   : /home/amr1-l300/catkin_ws/src/safety_zone/launch/safety_zone.launch
+path_naviManual   : /home/amr1-l300/catkin_ws/src/sti_control/launch/naviManual.launch
+
+path_cartographer : /home/amr1-l300/catkin_ws/src/launch_pkg/launch/cartogepher/cartographer.launch

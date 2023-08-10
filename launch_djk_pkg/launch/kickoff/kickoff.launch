@@ -1,0 +1,4 @@
+<launch>
+	<rosparam command="load" file="$(find launch_djk_pkg)/config/parameter_all.yaml" />
+	<node pkg="launch_djk_pkg"  name="kickoff" type="kickoff.py" output="screen" > </node>
+</launch>

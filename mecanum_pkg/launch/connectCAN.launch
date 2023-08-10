@@ -1,0 +1,7 @@
+<launch>
+    <node pkg="rosserial_python" name="motorCAN_node" type="serial_node.py" output="screen">
+        <param name="port" value="/dev/stibase_motor" />
+        <param name="baud" value="57600" /> 
+    </node>
+
+</launch>

@@ -1,0 +1,12 @@
+<launch>
+    <!-- <node pkg="robot_setup_tf_tutorial" name="robot_tf_listener" type="tf_listener" output="screen"/> -->
+    <!-- <node pkg="robot_setup_tf_tutorial" name="robot_tf_odometry_ex" type="tf_odometry_ex" output="screen"/> -->
+    <!-- <node pkg="robot_setup_tf_tutorial" name="odometry_conver_lidar" type="odom_lidar" output="screen"/>  -->
+
+     <!-- <node pkg="robot_setup_tf_tutorial" name="convert_accgyro" type="convert_accgyro" output="screen"/> -->
+
+    <node pkg="robot_setup_tf_tutorial" name="checkError_t265" type="checkError_t265" output="screen"/>
+    <!-- <node pkg="robot_setup_tf_tutorial" name="odom_v8" type="odom_v8"/> -->
+
+    <!-- <node name="comWinROs_v4" pkg="dynamic_sti" type="sti_agv_v4_meiko.py" output="screen"/>    -->
+</launch>
